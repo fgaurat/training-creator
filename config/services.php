@@ -35,4 +35,14 @@ return [
         ],
     ],
 
+    'n8n' => [
+        'webhook_url' => env('N8N_WEBHOOK_URL', 'https://n8n.seo4.fun/webhook/5b890ad9-32da-4d03-82a1-7f7fb542ec0c'),
+    ],
+
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT_URI', 'http://localhost:8000/auth/google/callback'),
+    ],
+
 ];
